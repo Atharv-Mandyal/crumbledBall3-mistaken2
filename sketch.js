@@ -21,7 +21,7 @@ var canvas =	createCanvas(1000, 400);
 	dustbinline2= new Dustbin (755,350,10,90)
 	dustbinline3= new Dustbin (810,380,100,20)
 
-  slingshot = new SlingShot(ball.body,{x:200, y:170});
+  Slingshot = new SlingShot(ball.body,{x:200, y:170});
   
 }
 
@@ -41,7 +41,7 @@ function draw() {
 }
 
 function mouseDragged(){
-  Matter.Body.setPosition(bird.body,{x:mouseX, y:mouseY})
+  Matter.Body.setPosition(ball.body,{x:mouseX, y:mouseY})
 }
 
 function mouseReleased(){
